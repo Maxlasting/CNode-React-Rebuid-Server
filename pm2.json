@@ -1,0 +1,14 @@
+{
+  "name": "www",
+  "script": "./index.js",
+  "watch": false,
+  "exec_mode": "fork",
+  "instances": "max",
+  "ignore_watch": [
+    "node_modules"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 3000
+  }
+}

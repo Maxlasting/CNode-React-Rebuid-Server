@@ -1,0 +1,31 @@
+{
+  "name": "CNode-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./entry/index.js",
+  "scripts": {
+    "dev": "nodemon ./entry/index.js",
+    "start": "node ./entry/index.js"
+  },
+  "author": "Fq",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.2",
+    "glob": "^7.1.3",
+    "koa": "^2.5.3",
+    "koa-body": "^4.0.4",
+    "koa-favicon": "^2.0.1",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.1",
+    "mongoose": "^5.4.0",
+    "query-string": "^6.2.0",
+    "querystringify": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-stage-1": "^6.24.1"
+  }
+}
