@@ -1,5 +1,5 @@
 {
-  "name": "www",
+  "name": "CNode",
   "script": "./index.js",
   "watch": false,
   "exec_mode": "fork",
@@ -9,6 +9,6 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "PORT": 3000
+    "PORT": 8222
   }
 }
