@@ -58,7 +58,7 @@ class _userRouter_ {
           success ? { ...data, ...info } : null
         )
 
-        ctx.session._user_ = retData
+        ctx.session.userData = retData
 
         ctx.body = retData
     }
@@ -66,14 +66,14 @@ class _userRouter_ {
 
   @get('/logout')
   async _userLogout_ (ctx) {
-    ctx.session._user_ = null
+    ctx.session.userData = null
     ctx.body = createBody(true, 200, '', null)
   }
 
   @get('/checkIfLogin')
   async _checkIfLogin_ (ctx) {
-    const check = ctx.session._user_
-    ctx.body = createBody(check, 200, check ? '' : '用户未登录', null)
+    const check = ctx.session.userData
+    ctx.body = createBody(true, 200, check ? '' : '用户未登录', check ? check.data : null)
   }
 }
 
