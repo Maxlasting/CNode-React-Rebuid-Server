@@ -3,7 +3,7 @@ const createApi = require('../utils/create-api.js')
 const { checkAndGetAccesstoken, saveNewUserDataTodb } = require('../services/user.services.js')
 const createBody = require('../utils/create-body.js')
 
-@prefix('/api')
+@prefix('/cnode/api')
 class _userRouter_ {
   @post('/register')
   @required({

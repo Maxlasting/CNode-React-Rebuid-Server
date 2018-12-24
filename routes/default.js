@@ -4,9 +4,9 @@ const { join } = require('path')
 const readFile = util.promisify(fs.readFile)
 const { prefix, get } = require('../decorators')
 
-@prefix('/')
+@prefix('/cnode')
 class _defaultRouter_ {
-  @get('*')
+  @get('/*')
   async _serverRender (ctx) {
     ctx.set('Content-Type', 'text/html')
 

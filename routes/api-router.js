@@ -9,7 +9,7 @@ const createBody = ({ success, data }) => _createBody(
   success ? data : null
 )
 
-@prefix('/api')
+@prefix('/cnode/api')
 class _cnodeRouter_ {
   @get('/topics')
   @required({
